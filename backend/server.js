@@ -8,7 +8,10 @@ const app = express();
 const PORT = process.env.PORT || 5001;
 const MONGO_URI = process.env.MONGO_URI ;
 
-app.use(cors());
+app.use(cors({
+  origin: 'https://your-frontend.onrender.com'
+}));
+
 app.use(express.json());
 
 app.get('/', (req, res) => {
