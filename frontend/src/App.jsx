@@ -5,7 +5,7 @@ import NavBar from './components/NavBar.jsx';
 import Report from './components/Report.jsx';
 import { Routes, Route } from 'react-router-dom';
 
-const API = '/api/skills';
+const API = 'https://skill-tracker-bg53.onrender.com';
 
 export default function App() {
   const [items, setItems] = useState([]);
