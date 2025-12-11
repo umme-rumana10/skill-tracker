@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from 'react';
 
-const API = '/api/skills';
+const API = 'https://skill-tracker-bg53.onrender.com/api/skills';
 
 export default function Report() {
   const [items, setItems] = useState([]);
