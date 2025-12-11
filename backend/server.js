@@ -11,7 +11,7 @@ const MONGO_URI = process.env.MONGO_URI ;
 
 
 app.use(cors({
-  origin: 'https://your-frontend-url.onrender.com', // replace with your actual frontend URL
+  origin: 'https://skill-tracker-frontend.onrender.com', // replace with your actual frontend URL
   methods: ['GET', 'POST', 'PUT', 'DELETE'],       // allowed HTTP methods
   credentials: true                                // if you need to send cookies/auth headers
 }));
