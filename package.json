@@ -1,0 +1,26 @@
+{
+  "name": "skill-tracker",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Skill Development & Certification Tracker (MERN)",
+  "scripts": {
+    "dev:server": "node backend/server.js",
+    "dev:client": "vite --config frontend/vite.config.js",
+    "dev": "concurrently -k -n server,client -c blue,green \"npm:dev:server\" \"npm:dev:client\"",
+    "build": "vite build --config frontend/vite.config.js",
+    "start": "node backend/server.js"
+  },
+  "dependencies": {
+    "cors": "^2.8.5",
+    "express": "^4.19.2",
+    "mongoose": "^8.6.1",
+    "react": "^18.3.1",
+    "react-dom": "^18.3.1",
+    "react-router-dom": "^6.26.2"
+  },
+  "devDependencies": {
+    "@vitejs/plugin-react": "^4.3.1",
+    "concurrently": "^8.2.2",
+    "vite": "^5.4.8"
+  }
+}
